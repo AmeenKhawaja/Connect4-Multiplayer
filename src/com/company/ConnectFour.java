@@ -306,8 +306,6 @@ public class ConnectFour {
         public void run() {
 
             try (
-                    // this logic of getting player one / player two input was taken from Sakai, under the networking
-                    // section posted by the Professor.
                     PrintWriter playerOneOutput = new PrintWriter(client1.getOutputStream(), true);
                     PrintWriter playerTwoOutput = new PrintWriter(client2.getOutputStream(), true);
                     BufferedReader playerOneInput = new BufferedReader(new InputStreamReader(client1.getInputStream()));
